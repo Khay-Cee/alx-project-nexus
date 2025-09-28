@@ -22,4 +22,4 @@ As part of my **Pro Frontend Development Program**, I researched the **Pro Backe
 - Frontend and backend must align closely for successful full-stack delivery.  
 
 ---
-💡 *This research gave me insights into backe*
+
