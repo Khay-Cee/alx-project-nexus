@@ -1,114 +1,73 @@
-# alx-project-nexus
-This is a documentation hub for my major learnings from the ALX ProDev Frontend Engineering program.
+# Welcome to your Lovable project
 
-## Overview
-As part of my **Pro Frontend Development Program**, I researched the **Pro Backend Development track** to understand the skills, tools, and practices it emphasizes. This helped me see how backend knowledge complements frontend expertise in building full-stack applications.
+## Project info
 
-## Major Learnings
-- **Key Technologies:** Web Development, Mobile Development, Progressive Web Apps (PWA).  
-- **Core Backend Tools & Concepts:** API design & integration, databases (SQL/NoSQL), authentication, system design, and deployment workflows.  
-- **Frontend-Backend Link:** Importance of GraphQL, REST APIs, and TypeScript for seamless integration.  
+**URL**: https://lovable.dev/projects/6df4ec5e-7cdc-45b6-be7f-56c9e15b8c00
 
-## Challenges & Solutions (Researched)
-- **Challenge:** Scaling APIs and handling complex data.  
-  **Solution:** Adopt modular architecture, GraphQL for efficient queries, and caching strategies.  
-- **Challenge:** Ensuring performance and reliability.  
-  **Solution:** System design principles (load balancing, database optimization, microservices).  
+## How can I edit this code?
 
-## Best Practices & Takeaways
-- Maintain clean, well-documented, and testable code.  
-- Prioritize security (authentication, authorization, data protection).  
-- Use version control and CI/CD pipelines for smooth collaboration.  
-- Frontend and backend must align closely for successful full-stack delivery.  
+There are several ways of editing your application.
 
----
-# Frontend Requirements – Movie Recommendation App
-Introduction
-This document defines the frontend requirements for the Movie Recommendation App. The backend (Django API) provides authentication, movie data, ratings, and recommendations. The frontend will serve as the user interface, enabling seamless interaction with these backend services.
+**Use Lovable**
 
-## User Roles
-Guest (Unauthenticated User)
-View landing page and app description
-Register a new account
-Log in
-Authenticated User
-Browse/search movies
-Rate movies
-View personalized recommendations
-Manage profile (update password, view rated movies)
-Log out
+Simply visit the [Lovable Project](https://lovable.dev/projects/6df4ec5e-7cdc-45b6-be7f-56c9e15b8c00) and start prompting.
 
-### Admin (Optional – via Django Admin)
-Managed through backend admin panel (not core frontend)
+Changes made via Lovable will be committed automatically to this repo.
 
-## Functional Requirements
-Authentication & Authorization
-Sign up (username, email, password)
-Log in with JWT/session tokens
-Log out securely
-Handle errors for invalid credentials
-Movie Browsing & Search
-Display movies in a list/grid with poster, title, genre, rating
-Search movies by title
-Filter movies by genre or year
-Ratings & Reviews
-Users can rate movies (1–5 stars)
-Show average ratings for each movie
-Update ratings in real time
-Recommendations
-Personalized recommendations for logged-in users
-Popular/top-rated movies for all users
+**Use your preferred IDE**
 
-### User Profile
-View and edit profile details
-View rated movies
-Update password
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-## UI/UX Requirements
-Responsive and mobile-first design
-Clean, minimal layout
-Consistent theme (light/dark mode optional)
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-### Pages/Views
-Landing Page – Welcome, description, CTA (login/register)
-Sign Up Page – Registration form
-Login Page – Login form with error handling
-Dashboard – Movie listings, search & filter bar
-Movie Details Page – Poster, description, genre, rating submission
-Recommendations Page – Personalized suggestions
-Profile Page – User info, rated movies, settings
+Follow these steps:
 
-## API Integration
-Base URL: https://movie-recommendation-api-0thd.onrender.com/
-Docs: /swagger/
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
 
-Example Endpoints
-Auth
-POST /auth/register/ → Register
-POST /auth/login/ → Login
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
-Movies
-GET /movies/ → List movies
-GET /movies/{id}/ → Movie details
+# Step 3: Install the necessary dependencies.
+npm i
 
-Ratings
-POST /ratings/ → Submit rating
-GET /ratings/user/{id}/ → Fetch user ratings
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
+```
 
-Recommendations
-GET /recommendations/user/{id}/ → Personalized recommendations
+**Edit a file directly in GitHub**
 
-## Suggested Tech Stack
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-Framework: React (Next.js optional)
-Styling: TailwindCSS or Material UI
-State Management: Redux Toolkit / React Query
-Auth: JWT handling with Axios interceptors
-Testing: Jest + React Testing Library
+**Use GitHub Codespaces**
 
-## Deliverables
-Fully responsive frontend app
-API integration with backend
-Authentication & authorization workflows
-Movie browsing, search, rating, and recommendations
-Deployment (Netlify/Vercel) linked to backend
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
+
+## What technologies are used for this project?
+
+This project is built with:
+
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
+
+## How can I deploy this project?
+
+Simply open [Lovable](https://lovable.dev/projects/6df4ec5e-7cdc-45b6-be7f-56c9e15b8c00) and click on Share -> Publish.
+
+## Can I connect a custom domain to my Lovable project?
+
+Yes, you can!
+
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
